@@ -21,7 +21,7 @@ public class Main {
 		while(option != EXIT_VALUE) {
 			System.out.println("Enter your options");
 			System.out.println("1. add \n2. remove \n3. print birds \n4. print swimable"
-					+ "\n5. print flyable \n6. print eatable \n7. edit bird \n"+EXIT_VALUE+". EXIT");
+					+ "\n5. print flyable \n6. print eatable \n7. edit bird \n\n8. count birds"+EXIT_VALUE+". EXIT");
 			option = scan.nextInt();
 			ViewLayer viewLayer = new ViewLayer();
 			
@@ -48,6 +48,10 @@ public class Main {
 				case 7:
 					editBird();
 					break;
+				case 8:
+					viewLayer.printcountBird();
+					break;
+					
 			}
 		}
 	}
@@ -163,5 +167,6 @@ public class Main {
 			
 			}
 		}
+		
 	}
 }
